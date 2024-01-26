@@ -1,0 +1,89 @@
+/* Establecer un fondo oscuro y letras claras y pequeñas */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif; /* Fuente de texto adecuada y elegante */
+  font-size: 14px; /* Tamaño de fuente pequeño */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para el encabezado de la página */
+.main-title {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/* Estilo para el contenedor principal de personajes */
+.characters-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Espacio entre las filas de personajes */
+  margin: 20px auto; /* Espacio alrededor del contenedor */
+  max-width: 1200px; /* Ancho máximo del contenedor */
+}
+
+/* Estilo para los contenedores de personajes */
+.character {
+  width: calc(50% - 80px); /* Ancho del contenedor del personaje (2 columnas) */
+  margin-bottom: 20px; /* Espacio entre los personajes en la misma fila */
+  background-color: #333; /* Fondo oscuro para cada contenedor de personaje */
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box; /* Incluir el relleno en el ancho total */
+}
+
+/* Estilo para las imágenes de personajes */
+.character-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilo para los nombres de personajes */
+.character-name {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Estilo para las descripciones de personajes */
+.character-desc {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* Estilo para los botones "Mostrar más" */
+.Show-more-info {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+
+/* Cambiar localización del botón */
+.btn-index {
+  text-align: left;
+}
+
+/* Estilo para el botón de retroceso */
+.btn-index a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
