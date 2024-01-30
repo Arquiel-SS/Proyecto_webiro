@@ -1,9 +1,22 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Noto Serif JP', serif;
   background-color: #1f1f1f;
   color: #ffffff;
   margin: 0;
   padding: 0;
+  background-image: url('/root/img/Sekiro_background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 /* Barra de desplazamiento */
@@ -27,6 +40,16 @@ body {
 a:link {
   text-decoration: none;
   color: #000000;
+}
+
+/* Apartado Navbar */
+/* Estilos para accionar JavaScript */
+.navbar-hidden {
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.navbar-visible {
+  background-color: rgba(255, 0, 0, 1);
 }
 
 .top_bar {
@@ -152,22 +175,10 @@ a:link {
   opacity: 1;
 }
 
-footer {
-  background-color: #000000;
-  color: #ffffff;
-  text-align: center;
-  padding: 10px;
-}
 
-body {
-  background-image: url('/root/img/Sekiro_background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 
 .after-head {
-  background-color: #000000;
+  background: linear-gradient(to bottom, #020210, #282424);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -180,12 +191,18 @@ body {
 
 .after-head-summary {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 100px;
 }
+
+.after-head-summary a {
+  color: #ffffff; /* color del texto del enlace */
+  text-decoration: underline; /* o cualquier estilo de subrayado que desees */
+}
+
 
 .after-head-image {
   justify-content: center;
-  width: 600px;
+  width: 500px;
 }
 
 .after-head-image img {
@@ -198,4 +215,11 @@ body {
   height: 1px;
   background-color: #ccc;
   margin: 0;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
 }
